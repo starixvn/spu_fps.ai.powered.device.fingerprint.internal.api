@@ -1,5 +1,5 @@
 is_global = true
-build_property.RootNamespace = Device.Fingerprint.Model
+build_property.RootNamespace = Device.FingerPrint.Model
 build_property.ProjectDir = D:\Projects\SPU\fps.ai.powered.device.fingerprint.internal.api\fps.ai.powered.device.fingerprint.internal.api\src\Device.FingerPrint.Model\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
