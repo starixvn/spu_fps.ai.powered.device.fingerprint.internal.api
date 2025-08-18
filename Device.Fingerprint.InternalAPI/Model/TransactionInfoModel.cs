@@ -10,7 +10,7 @@
 
         public ulong AccountID { get; set; }
 
-        public string loginName { get; set; }
+        public string LoginName { get; set; }
 
         public int SubscriberID { get; set; }
 

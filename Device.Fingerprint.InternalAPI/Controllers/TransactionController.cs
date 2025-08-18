@@ -67,7 +67,7 @@
                         InsertTime = x.InsertTime,
                         IP = x.IP,
                         IPID = x.IPID,
-                        loginName = x.loginName,
+                        LoginName = x.loginName,
                         OSName = x.OSName,
                         OSVersion = x.OSVersion,
                         RobotTracking = x.RobotTracking,
