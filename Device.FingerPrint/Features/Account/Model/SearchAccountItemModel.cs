@@ -4,7 +4,7 @@
     {
         public ulong CTSCustID { get; set; }
 
-        public string Username { get; set; }
+        public string UserName { get; set; }
 
         public string RegisterName { get; set; } = string.Empty;
 

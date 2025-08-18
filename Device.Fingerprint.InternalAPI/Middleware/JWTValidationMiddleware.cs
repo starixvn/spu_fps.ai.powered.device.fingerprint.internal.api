@@ -19,7 +19,9 @@ namespace Device.Fingerprint.InternalAPI.Middleware
                 return;
             }
 
-            if (!context.Request.Path.Value.Contains("generatetoken/audience") && !context.Request.Path.Value.Contains("whoami"))
+            // Add null check for context.Request.Path.Value
+            var pathValue = context.Request.Path.Value;
+            if (pathValue != null && !pathValue.Contains("generatetoken/audience"))
             {
                 var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(' ').Last();
 
@@ -30,6 +32,13 @@ namespace Device.Fingerprint.InternalAPI.Middleware
 
                     return;
                 }
+            }
+            else if (pathValue == null)
+            {
+                // If path is null, return 401 for security
+                context.Response.Clear();
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                return;
             }
 
             await next(context);
@@ -42,11 +51,16 @@ namespace Device.Fingerprint.InternalAPI.Middleware
                 var jwtSetting = appSettings.Configuration.GetSection("AppConfig:JWT:APIConfig").Get<IEnumerable<APIConfigModel>>();
                 var path = context.Request.Path.Value;
 
-                var matchedApi = jwtSetting.FirstOrDefault(item => path.StartsWith(item.API));
-
-                if (matchedApi != null && matchedApi.Token == token)
+                // Handle null jwtSetting to prevent ArgumentNullException
+                // Also handle null path
+                if (jwtSetting != null && path != null)
                 {
-                    return true;
+                    var matchedApi = jwtSetting.FirstOrDefault(item => path.StartsWith(item.API));
+
+                    if (matchedApi != null && matchedApi.Token == token)
+                    {
+                        return true;
+                    }
                 }
             }
 

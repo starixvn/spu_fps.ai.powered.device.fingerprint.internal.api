@@ -1,5 +1,6 @@
 ﻿using Device.FingerPrint.Core;
 using Device.FingerPrint.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +13,7 @@ namespace Device.Fingerprint.InternalAPI.Controllers
         private readonly IAppSettings appSettings = appSettings;
 
         [HttpGet("whoami")]
+        [AllowAnonymous]
         public WhoamiModel Index()
         {
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
