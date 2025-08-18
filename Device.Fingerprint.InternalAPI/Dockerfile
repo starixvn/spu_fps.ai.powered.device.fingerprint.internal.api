@@ -1,6 +1,6 @@
 FROM hub.nexdev.net/base/dotnet/core/sdk:8.0-alpine AS builder
 
-WORKDIR /src
+WORKDIR /fps.ai.powered.device.fingerprint.internal.api
 
 COPY ["./Device.FingerPrint", "Device.FingerPrint/"]
 
