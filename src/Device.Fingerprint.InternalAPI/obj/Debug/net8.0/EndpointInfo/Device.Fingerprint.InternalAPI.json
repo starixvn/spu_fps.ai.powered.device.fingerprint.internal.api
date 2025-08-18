@@ -1,0 +1,2924 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Device.Fingerprint.InternalAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/account/SearchAccount": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchAccountParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchAccountParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchAccountParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchAccountResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchAccountResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchAccountResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/account/GetAssAccountInfoByCustSubscriber": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountInfoByCustSubscriberModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/account/GetAssAccountsByCustSubscriber": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/account/GetAssDevicesByCustSubscriber": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/account/GetAssMatrixAccountByCustSubscriber": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/account/GetAccountsPerDevice": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAccountPerDeviceParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAccountPerDeviceParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAccountPerDeviceParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAccountsPerDeviceResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAccountsPerDeviceResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAccountsPerDeviceResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/whoami": {
+      "get": {
+        "tags": [
+          "Common"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/WhoamiModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WhoamiModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WhoamiModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/SearchDevice": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchDeviceParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchDeviceParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchDeviceParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchDeviceItemModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchDeviceItemModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchDeviceItemModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/GetAssDeviceInfoByIdSubscriber": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetAssDeviceInfoByIDSubscriberModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/GetAssAccountsByDeviceSubscriber": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccByDevSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccByDevSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssAccByDevSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssAccByDevSubscriberItemModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssAccByDevSubscriberItemModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssAccByDevSubscriberItemModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/GetAssDevByDeviceSubscriber": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevByDevSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevByDevSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssDevByDevSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssDevByDevSubscriberItemModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssDevByDevSubscriberItemModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssDevByDevSubscriberItemModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/GetAssMatrixByDeviceSubscriber": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberItemModel"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberItemModel"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetAssMatrixByDeviceSubscriberItemModel"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/device/GetDevicesPerAccount": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDevicesPerAccountParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDevicesPerAccountParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetDevicesPerAccountParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDevicesPerAccountResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDevicesPerAccountResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetDevicesPerAccountResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GetFingerPrint/{fromDate}/{toDate}/{batchSize}/{lastFingerPrintID}": {
+      "get": {
+        "tags": [
+          "FingerPrint"
+        ],
+        "parameters": [
+          {
+            "name": "fromDate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "toDate",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "batchSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "lastFingerPrintID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PushFingerprintToLogstash": {
+      "post": {
+        "tags": [
+          "FingerPrint"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "fromDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "toDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "batchSize": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "lastFingerPrintID": {
+                    "type": "integer",
+                    "format": "int64"
+                  }
+                }
+              },
+              "encoding": {
+                "fromDate": {
+                  "style": "form"
+                },
+                "toDate": {
+                  "style": "form"
+                },
+                "batchSize": {
+                  "style": "form"
+                },
+                "lastFingerPrintID": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FPFingerPrintTransform"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/raw-trans/insertRawTrans": {
+      "post": {
+        "tags": [
+          "RawTransaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/raw-trans/insertFP": {
+      "post": {
+        "tags": [
+          "RawTransaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InsertFPFingerprintEntity"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InsertFPFingerprintEntity"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/InsertFPFingerprintEntity"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/raw-trans/insertUA": {
+      "post": {
+        "tags": [
+          "RawTransaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UserAgentInfoModel"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UserAgentInfoModel"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UserAgentInfoModel"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/redis/get-value-redis-string": {
+      "get": {
+        "tags": [
+          "Redis"
+        ],
+        "parameters": [
+          {
+            "name": "dbIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "key",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/redis/add-update-redis-string": {
+      "post": {
+        "tags": [
+          "Redis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisStringRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisStringRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisStringRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/redis/delete-redis-string": {
+      "post": {
+        "tags": [
+          "Redis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisDeleteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisDeleteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RedisDeleteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/subscriber/GetSubscriberInfo": {
+      "get": {
+        "tags": [
+          "Subscriber"
+        ],
+        "parameters": [
+          {
+            "name": "subscriberName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriberModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriberModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SubscriberModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GetTransactionInfo/{lastTransID}/{batchSize}": {
+      "get": {
+        "tags": [
+          "Transaction"
+        ],
+        "parameters": [
+          {
+            "name": "lastTransID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          },
+          {
+            "name": "batchSize",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionInfoModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GetTransactionHistory": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GetLastestTransactionBySubscriber": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LatestTransactionParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LatestTransactionParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LatestTransactionParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/LatestTransactionResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LatestTransactionResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LatestTransactionResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GetTransactionHistoryByDevice": {
+      "post": {
+        "tags": [
+          "Transaction"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionHistoryByDeviceParamModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionHistoryByDeviceParamModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TransactionHistoryByDeviceParamModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionHistoryByDeviceResultModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionHistoryByDeviceResultModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransactionHistoryByDeviceResultModel"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FPFingerPrintTransform": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "attribute": {
+            "$ref": "#/components/schemas/FPFingerprintAttributeModel"
+          },
+          "insertedTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FPFingerprintAttributeExtraModel": {
+        "type": "object",
+        "properties": {
+          "accept": {
+            "type": "string",
+            "nullable": true
+          },
+          "encoding": {
+            "type": "string",
+            "nullable": true
+          },
+          "headers": {
+            "type": "string",
+            "nullable": true
+          },
+          "osName": {
+            "type": "string",
+            "nullable": true
+          },
+          "browserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "browserVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgent": {
+            "type": "string",
+            "nullable": true
+          },
+          "platform": {
+            "type": "string",
+            "nullable": true
+          },
+          "navigator": {
+            "type": "string",
+            "nullable": true
+          },
+          "timezoneOffset": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceType": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FPFingerprintAttributeModel": {
+        "type": "object",
+        "properties": {
+          "applePay": {
+            "type": "string",
+            "nullable": true
+          },
+          "architecture": {
+            "type": "string",
+            "nullable": true
+          },
+          "audio": {
+            "type": "string",
+            "nullable": true
+          },
+          "audioBaseLatency": {
+            "type": "string",
+            "nullable": true
+          },
+          "canvas": {
+            "type": "string",
+            "nullable": true
+          },
+          "colorDepth": {
+            "type": "string",
+            "nullable": true
+          },
+          "colorGamut": {
+            "type": "string",
+            "nullable": true
+          },
+          "contrast": {
+            "type": "string",
+            "nullable": true
+          },
+          "cookiesEnabled": {
+            "type": "string",
+            "nullable": true
+          },
+          "cpuClass": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceMemory": {
+            "type": "string",
+            "nullable": true
+          },
+          "domBlockers": {
+            "type": "string",
+            "nullable": true
+          },
+          "doNotTrack": {
+            "type": "string",
+            "nullable": true
+          },
+          "fontPreferences": {
+            "type": "string",
+            "nullable": true
+          },
+          "fonts": {
+            "type": "string",
+            "nullable": true
+          },
+          "forcedColors": {
+            "type": "string",
+            "nullable": true
+          },
+          "hardwareConcurrency": {
+            "type": "string",
+            "nullable": true
+          },
+          "hdr": {
+            "type": "string",
+            "nullable": true
+          },
+          "indexedDB": {
+            "type": "string",
+            "nullable": true
+          },
+          "invertedColors": {
+            "type": "string",
+            "nullable": true
+          },
+          "languages": {
+            "type": "string",
+            "nullable": true
+          },
+          "localStorage": {
+            "type": "string",
+            "nullable": true
+          },
+          "math": {
+            "type": "string",
+            "nullable": true
+          },
+          "monochrome": {
+            "type": "string",
+            "nullable": true
+          },
+          "openDatabase": {
+            "type": "string",
+            "nullable": true
+          },
+          "osCpu": {
+            "type": "string",
+            "nullable": true
+          },
+          "pdfViewerEnabled": {
+            "type": "string",
+            "nullable": true
+          },
+          "platform": {
+            "type": "string",
+            "nullable": true
+          },
+          "plugins": {
+            "type": "string",
+            "nullable": true
+          },
+          "privateClickMeasurement": {
+            "type": "string",
+            "nullable": true
+          },
+          "reducedMotion": {
+            "type": "string",
+            "nullable": true
+          },
+          "reducedTransparency": {
+            "type": "string",
+            "nullable": true
+          },
+          "screenFrame": {
+            "type": "string",
+            "nullable": true
+          },
+          "screenResolution": {
+            "type": "string",
+            "nullable": true
+          },
+          "sessionStorage": {
+            "type": "string",
+            "nullable": true
+          },
+          "timezone": {
+            "type": "string",
+            "nullable": true
+          },
+          "touchSupport": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendor": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendorFlavors": {
+            "type": "string",
+            "nullable": true
+          },
+          "webGlBasics": {
+            "type": "string",
+            "nullable": true
+          },
+          "webGlExtensions": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAccountPerDeviceParamModel": {
+        "type": "object",
+        "properties": {
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "timeRange": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noOfAccount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAccountsPerDeviceItemModel": {
+        "type": "object",
+        "properties": {
+          "deviceId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deviceNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "noOfAccount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAccountsPerDeviceResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAccountsPerDeviceItemModel"
+            },
+            "nullable": true
+          },
+          "totalRows": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccByDevSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "accountID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceInCommon": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "otherDeives": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedAccount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccByDevSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfRecord": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccountInfoByCustSubscriberModel": {
+        "type": "object",
+        "properties": {
+          "associatedDevices": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedAccounts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstLogin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "firstDevice": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccountInfoByCustSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccountsByCustSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceInCommon": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "otherDeives": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedAccount": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccountsByCustSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfRecord": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssAccountsByCustSubscriberResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAssAccountsByCustSubscriberItemModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDevByDevSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstSeenDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "associatedAccounts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedDevices": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDevByDevSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfRecord": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDeviceFirstSeen": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriberName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDeviceInfoByIDSubscriberModel": {
+        "type": "object",
+        "properties": {
+          "associatedDevices": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedAccounts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstSeenBySubscriber": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAssDeviceFirstSeen"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDeviceInfoByIDSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDevicesByCustSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstSeenDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "associatedAccounts": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "associatedDevices": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDevicesByCustSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfRecord": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssDevicesByCustSubscriberResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAssDevicesByCustSubscriberItemModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssMatrixAccountByCustSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "firstDeviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssMatrixAccountByCustSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfCustomer": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noOfDevice": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssMatrixAccountByCustSubscriberResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetAssMatrixAccountByCustSubscriberItemModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssMatrixByDeviceSubscriberItemModel": {
+        "type": "object",
+        "properties": {
+          "accountID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "firstDeviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAssMatrixByDeviceSubscriberParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "noOfCustomer": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noOfDevice": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDevicesPerAccountItemModel": {
+        "type": "object",
+        "properties": {
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "noOfDevice": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDevicesPerAccountParamModel": {
+        "type": "object",
+        "properties": {
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "timeRange": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noOfDevice": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetDevicesPerAccountResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetDevicesPerAccountItemModel"
+            },
+            "nullable": true
+          },
+          "totalRows": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "InsertFPFingerprintEntity": {
+        "type": "object",
+        "properties": {
+          "fpFingerPrintCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "fpFingerPrintAttribute": {
+            "$ref": "#/components/schemas/FPFingerprintAttributeModel"
+          },
+          "fpFingerPrintExtraCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "fpFingerPrintExtraAttribute": {
+            "$ref": "#/components/schemas/FPFingerprintAttributeExtraModel"
+          },
+          "fpFingerPrintOldCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LatestTransactionItemModel": {
+        "type": "object",
+        "properties": {
+          "transTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "transID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstDeviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          },
+          "browser": {
+            "type": "string",
+            "nullable": true
+          },
+          "urlDetails": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "robotTracking": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "isp": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LatestTransactionParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "length": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "take": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LatestTransactionResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LatestTransactionItemModel"
+            },
+            "nullable": true
+          },
+          "totalItem": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RedisDeleteRequest": {
+        "type": "object",
+        "properties": {
+          "dbIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "key": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RedisStringRequest": {
+        "type": "object",
+        "properties": {
+          "dbIndex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "expireSeconds": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchAccountItemModel": {
+        "type": "object",
+        "properties": {
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchAccountParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isSearchPartial": {
+            "type": "boolean"
+          },
+          "take": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchAccountResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SearchAccountItemModel"
+            },
+            "nullable": true
+          },
+          "totalItem": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchDeviceItemModel": {
+        "type": "object",
+        "properties": {
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SearchDeviceParamModel": {
+        "type": "object",
+        "properties": {
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubscriberModel": {
+        "type": "object",
+        "properties": {
+          "subscriberId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriberName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionHistoryByDeviceItemModel": {
+        "type": "object",
+        "properties": {
+          "transID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "transTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          },
+          "browser": {
+            "type": "string",
+            "nullable": true
+          },
+          "urlDetails": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "robotTracking": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionHistoryByDeviceParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fromDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "toDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "take": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionHistoryByDeviceResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TransactionHistoryByDeviceItemModel"
+            },
+            "nullable": true
+          },
+          "totalItem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isTimeout": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionInfoModel": {
+        "type": "object",
+        "properties": {
+          "transID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "custID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "transTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "accountID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "loginName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriberName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "flagged": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "robotTracking": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgentKey": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgent": {
+            "type": "string",
+            "nullable": true
+          },
+          "osName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "browserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "browserVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipid": {
+            "type": "string",
+            "nullable": true
+          },
+          "urlid": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "urlDetails": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionResultID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "transStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "insertTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "botDetectionValue": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "botComponentID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fakeIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstDeviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceStatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceFingerprintID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "fingerprintCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionItemModel": {
+        "type": "object",
+        "properties": {
+          "transTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "transID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "registerName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "firstDeviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "actionResult": {
+            "type": "string",
+            "nullable": true
+          },
+          "os": {
+            "type": "string",
+            "nullable": true
+          },
+          "browser": {
+            "type": "string",
+            "nullable": true
+          },
+          "urlDetails": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "robotTracking": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "isp": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgent": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionParamModel": {
+        "type": "object",
+        "properties": {
+          "subscriberID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fromDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "toDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ctsCustID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "deviceCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "ip": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "region": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPartial": {
+            "type": "boolean"
+          },
+          "skip": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "take": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TransactionResultModel": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TransactionItemModel"
+            },
+            "nullable": true
+          },
+          "totalItem": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isTimeout": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserAgentInfoModel": {
+        "type": "object",
+        "properties": {
+          "fpUserAgentCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAgent": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientType": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "osName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osShortName": {
+            "type": "string",
+            "nullable": true
+          },
+          "osVersion": {
+            "type": "string",
+            "nullable": true
+          },
+          "osPlatform": {
+            "type": "string",
+            "nullable": true
+          },
+          "device": {
+            "type": "string",
+            "nullable": true
+          },
+          "brand": {
+            "type": "string",
+            "nullable": true
+          },
+          "model": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceType": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WhoamiModel": {
+        "type": "object",
+        "properties": {
+          "environment": {
+            "type": "string",
+            "nullable": true
+          },
+          "serverName": {
+            "type": "string",
+            "nullable": true
+          },
+          "localIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "serverTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "realIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "fakeIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "xfw": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientIP": {
+            "type": "string",
+            "nullable": true
+          },
+          "actualIP": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Standard Authorization header using the Bearer scheme. Example: \"bearer {token}\"",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

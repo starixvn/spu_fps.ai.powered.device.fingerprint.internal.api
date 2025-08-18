@@ -1,0 +1,13 @@
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\bin\Release\netstandard2.1\Device.FingerPrint.deps.json
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\bin\Release\netstandard2.1\Device.FingerPrint.dll
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\bin\Release\netstandard2.1\Device.FingerPrint.pdb
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\bin\Release\netstandard2.1\Device.FingerPrint.Model.dll
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\bin\Release\netstandard2.1\Device.FingerPrint.Model.pdb
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.AssemblyInfoInputs.cache
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.AssemblyInfo.cs
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.csproj.CoreCompileInputs.cache
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.csproj.CopyComplete
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.dll
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.pdb
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.csproj.AssemblyReference.cache
+D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\obj\Release\netstandard2.1\Device.FingerPrint.GeneratedMSBuildEditorConfig.editorconfig

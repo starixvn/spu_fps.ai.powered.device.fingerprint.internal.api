@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Device.FingerPrint
+build_property.ProjectDir = D:\Projects\SPU\GFP\device.fingerprint.api\src\Device.FingerPrint\
