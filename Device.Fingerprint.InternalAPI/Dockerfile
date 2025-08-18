@@ -4,7 +4,7 @@ WORKDIR /src
 
 COPY ["./Device.FingerPrint", "Device.FingerPrint/"]
 
-COPY ["./Device.FingerPrint.Core", "Core/Device.FingerPrint.Core/"]
+COPY ["./Device.FingerPrint.Core", "Device.FingerPrint.Core/"]
 
 COPY ["./Device.FingerPrint.Model", "Device.FingerPrint.Model/"]
 
