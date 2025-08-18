@@ -17,7 +17,6 @@ namespace Device.Fingerprint.InternalAPI.Controllers
         public WhoamiModel Index()
         {
             var httpConnectionFeature = HttpContext.Features.Get<IHttpConnectionFeature>();
-
             var localIpAddress = httpConnectionFeature?.LocalIpAddress;
 
             return new WhoamiModel
