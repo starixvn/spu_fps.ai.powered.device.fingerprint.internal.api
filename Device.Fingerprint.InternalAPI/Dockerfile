@@ -2,23 +2,23 @@ FROM hub.nexdev.net/base/dotnet/core/sdk:8.0-alpine AS builder
 
 WORKDIR /src
 
-COPY ["./src/Device.FingerPrint", "Device.FingerPrint/"]
+COPY ["./Device.FingerPrint", "Device.FingerPrint/"]
 
-COPY ["./src/Core/Device.FingerPrint.Core", "Core/Device.FingerPrint.Core/"]
+COPY ["./Device.FingerPrint.Core", "Core/Device.FingerPrint.Core/"]
 
-COPY ["./src/Device.FingerPrint.Model", "Device.FingerPrint.Model/"]
+COPY ["./Device.FingerPrint.Model", "Device.FingerPrint.Model/"]
 
-COPY ["./src/Device.FingerPrint.Redis", "Device.FingerPrint.Redis/"]
+COPY ["./Device.FingerPrint.Redis", "Device.FingerPrint.Redis/"]
 
-COPY ["./src/Device.Fingerprint.InternalAPI/Device.Fingerprint.InternalAPI.csproj", "Device.Fingerprint.InternalAPI/"]
+COPY ["./Device.Fingerprint.InternalAPI/Device.Fingerprint.InternalAPI.csproj", "Device.Fingerprint.InternalAPI/"]
 
-WORKDIR "/src/Device.Fingerprint.InternalAPI"
+WORKDIR "/Device.Fingerprint.InternalAPI"
 
 RUN dotnet nuget add source https://nuget.nexdev.net/api/v2
 
 RUN dotnet restore -v n
 
-COPY ./src/Device.Fingerprint.InternalAPI .
+COPY ./Device.Fingerprint.InternalAPI .
 
 RUN dotnet publish -r linux-x64 --self-contained false -c Release -o /app
 
