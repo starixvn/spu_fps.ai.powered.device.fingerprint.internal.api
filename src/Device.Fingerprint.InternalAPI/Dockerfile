@@ -12,7 +12,7 @@ COPY ["./src/Device.FingerPrint.Redis", "Device.FingerPrint.Redis/"]
 
 COPY ["./src/Device.Fingerprint.InternalAPI/Device.Fingerprint.InternalAPI.csproj", "Device.Fingerprint.InternalAPI/"]
 
-WORKDIR "/Device.Fingerprint.InternalAPI"
+WORKDIR "/src/Device.Fingerprint.InternalAPI"
 
 RUN dotnet nuget add source https://nuget.nexdev.net/api/v2
 
