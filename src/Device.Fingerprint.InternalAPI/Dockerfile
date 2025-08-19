@@ -2,13 +2,13 @@ FROM hub.nexdev.net/base/dotnet/core/sdk:8.0-alpine AS builder
 
 WORKDIR /src
 
-COPY ["./src/Device.FingerPrint", "Device.FingerPrint/"]
+COPY ["./src/Device.Fingerprint", "Device.Fingerprint/"]
 
-COPY ["./src/Device.FingerPrint.Core", "Device.FingerPrint.Core/"]
+COPY ["./src/Device.Fingerprint.Core", "Device.Fingerprint.Core/"]
 
-COPY ["./src/Device.FingerPrint.Model", "Device.FingerPrint.Model/"]
+COPY ["./src/Device.Fingerprint.Model", "Device.Fingerprint.Model/"]
 
-COPY ["./src/Device.FingerPrint.Redis", "Device.FingerPrint.Redis/"]
+COPY ["./src/Device.Fingerprint.Redis", "Device.Fingerprint.Redis/"]
 
 COPY ["./src/Device.Fingerprint.InternalAPI/Device.Fingerprint.InternalAPI.csproj", "Device.Fingerprint.InternalAPI/"]
 

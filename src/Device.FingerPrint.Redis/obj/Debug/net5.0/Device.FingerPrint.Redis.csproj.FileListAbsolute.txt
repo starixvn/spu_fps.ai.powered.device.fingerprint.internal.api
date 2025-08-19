@@ -1,5 +1,0 @@
-D:\Projects\SPU\GFP\device.fingerprint.api\Device.FingerPrint.Redis\obj\Debug\net5.0\Device.FingerPrint.Redis.csproj.AssemblyReference.cache
-D:\Projects\SPU\GFP\device.fingerprint.api\Device.FingerPrint.Redis\obj\Debug\net5.0\Device.FingerPrint.Redis.GeneratedMSBuildEditorConfig.editorconfig
-D:\Projects\SPU\GFP\device.fingerprint.api\Device.FingerPrint.Redis\obj\Debug\net5.0\Device.FingerPrint.Redis.AssemblyInfoInputs.cache
-D:\Projects\SPU\GFP\device.fingerprint.api\Device.FingerPrint.Redis\obj\Debug\net5.0\Device.FingerPrint.Redis.AssemblyInfo.cs
-D:\Projects\SPU\GFP\device.fingerprint.api\Device.FingerPrint.Redis\obj\Debug\net5.0\Device.FingerPrint.Redis.csproj.CoreCompileInputs.cache

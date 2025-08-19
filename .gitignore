@@ -4,3 +4,12 @@
 */obj/*
 */.vs/*
 /src/*/obj/*
+/src/*/obj/Debug/*
+src/*/bin/*
+/src/*/bin/Debug/*
+/src/Device.FingerPrint/bin/Debug/*
+/src/Device.FingerPrint.Redis/obj/Debug/*
+/src/Device.FingerPrint.Core/bin/Debug/*
+/src/Device.FingerPrint.Core/bin/Debug/*
+/src/Device.FingerPrint.Core/bin/Debug/netstandard2.0/*
+/src/Device.Fingerprint.InternalAPI/obj/Debug/*

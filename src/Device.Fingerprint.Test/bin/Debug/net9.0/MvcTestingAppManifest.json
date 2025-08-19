@@ -1,5 +1,0 @@
-{
-  "Device.Fingerprint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\SPU\\fps.ai.powered.device.fingerprint.internal.api\\fps.ai.powered.device.fingerprint.internal.api\\src\\Device.FingerPrint",
-  "Device.Fingerprint.InternalAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\SPU\\fps.ai.powered.device.fingerprint.internal.api\\fps.ai.powered.device.fingerprint.internal.api\\src\\Device.Fingerprint.InternalAPI",
-  "Device.Fingerprint.Redis, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "D:\\Projects\\SPU\\fps.ai.powered.device.fingerprint.internal.api\\fps.ai.powered.device.fingerprint.internal.api\\src\\Device.FingerPrint.Redis"
-}
