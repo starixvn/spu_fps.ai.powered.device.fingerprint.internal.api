@@ -1,7 +1,7 @@
-﻿namespace Device.FingerPrint.Features.Devices.Services
+﻿namespace Device.Fingerprint.Features.Devices.Services
 {
-    using Device.FingerPrint.Features.Devices.Criterias;
-    using Device.FingerPrint.Features.Devices.Model;
+    using Device.Fingerprint.Features.Devices.Criterias;
+    using Device.Fingerprint.Features.Devices.Model;
     using Fanex.Data.Repository;
 
     public interface IDeviceDataAccess

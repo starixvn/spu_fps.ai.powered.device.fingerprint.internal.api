@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.Subscriber.Criterias
+namespace Device.Fingerprint.Features.Subscriber.Criterias
 {
     public class GetSubscriberListCriteria : CriteriaBase
     {

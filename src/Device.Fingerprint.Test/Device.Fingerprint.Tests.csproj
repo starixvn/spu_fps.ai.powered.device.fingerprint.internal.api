@@ -25,9 +25,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Device.Fingerprint.InternalAPI\Device.Fingerprint.InternalAPI.csproj" />
-    <ProjectReference Include="..\Device.FingerPrint.Core\Device.FingerPrint.Core.csproj" />
-    <ProjectReference Include="..\Device.FingerPrint\Device.FingerPrint.csproj" />
-    <ProjectReference Include="..\Device.FingerPrint.Redis\Device.FingerPrint.Redis.csproj" />
+    <ProjectReference Include="..\Device.Fingerprint.Core\Device.Fingerprint.Core.csproj" />
+    <ProjectReference Include="..\Device.Fingerprint\Device.Fingerprint.csproj" />
+    <ProjectReference Include="..\Device.Fingerprint.Redis\Device.Fingerprint.Redis.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Account.Model
+﻿namespace Device.Fingerprint.Features.Account.Model
 {
     public class GetAssAccountsByCustSubscriberParamModel
     {

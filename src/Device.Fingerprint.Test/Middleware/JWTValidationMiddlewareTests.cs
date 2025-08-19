@@ -1,6 +1,6 @@
 using Device.Fingerprint.InternalAPI.Middleware;
 using Device.Fingerprint.InternalAPI.Model;
-using Device.FingerPrint.Core;
+using Device.Fingerprint.Core;
 using FluentAssertions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

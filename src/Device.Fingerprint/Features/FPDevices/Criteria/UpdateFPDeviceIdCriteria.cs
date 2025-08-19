@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.FPDevices.Criteria
+namespace Device.Fingerprint.Features.FPDevices.Criteria
 {
     public class UpdateFPDeviceIdCriteria : NonQueryCommand
     {

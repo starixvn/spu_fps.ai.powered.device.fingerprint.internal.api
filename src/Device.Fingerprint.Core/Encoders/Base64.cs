@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Core.Encoders
+﻿namespace Device.Fingerprint.Core.Encoders
 {
     using System;
     using System.Linq;

@@ -1,5 +1,5 @@
 ﻿using Device.Fingerprint.InternalAPI.Model;
-using Device.FingerPrint.Core;
+using Device.Fingerprint.Core;
 using Microsoft.AspNetCore.Authorization;
 
 namespace Device.Fingerprint.InternalAPI.Middleware

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Device.FingerPrint.Features.Transaction.Model
+namespace Device.Fingerprint.Features.Transaction.Model
 {
     public class TransactionHistoryEntity
     {

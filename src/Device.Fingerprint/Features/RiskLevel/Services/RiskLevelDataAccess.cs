@@ -1,14 +1,14 @@
-﻿using Device.FingerPrint.Features.RiskLevel.Criterias;
-using Device.FingerPrint.Features.RiskLevel.Model;
-using Device.FingerPrint.Features.Transaction.Criterias;
-using Device.FingerPrint.Features.Transaction.Model;
-using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Features.RiskLevel.Criterias;
+using Device.Fingerprint.Features.RiskLevel.Model;
+using Device.Fingerprint.Features.Transaction.Criterias;
+using Device.Fingerprint.Features.Transaction.Model;
+using Device.Fingerprint.Model;
 using Fanex.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Device.FingerPrint.Features.RiskLevel.Services
+namespace Device.Fingerprint.Features.RiskLevel.Services
 {
     public interface IRiskLevelDataAccess
     {

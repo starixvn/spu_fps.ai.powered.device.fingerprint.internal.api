@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Device.FingerPrint.Core.Encoders
+namespace Device.Fingerprint.Core.Encoders
 {
     /// <summary>
     ///     RC4 class for encryption and decryption.

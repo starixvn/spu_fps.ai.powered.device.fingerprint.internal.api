@@ -1,7 +1,7 @@
-﻿namespace Device.FingerPrint.Features.FPTransactions.Services
+﻿namespace Device.Fingerprint.Features.FPTransactions.Services
 {
-    using Device.FingerPrint.Features.FPTransactions.Criterias;
-    using Device.FingerPrint.Features.FPTransactions.Models;
+    using Device.Fingerprint.Features.FPTransactions.Criterias;
+    using Device.Fingerprint.Features.FPTransactions.Models;
     using Fanex.Data;
     using Fanex.Data.Repository;    
     using System.Collections.Generic;    

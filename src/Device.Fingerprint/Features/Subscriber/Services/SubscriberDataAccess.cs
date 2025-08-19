@@ -1,10 +1,10 @@
-﻿using Device.FingerPrint.Features.Subscriber.Criterias;
-using Device.FingerPrint.Features.Subscriber.Model;
+﻿using Device.Fingerprint.Features.Subscriber.Criterias;
+using Device.Fingerprint.Features.Subscriber.Model;
 using Fanex.Data;
 using Fanex.Data.Repository;
 using System.Collections.Generic;
 
-namespace Device.FingerPrint.Features.Subscriber.Services
+namespace Device.Fingerprint.Features.Subscriber.Services
 {
     public interface ISubscriberDataAccess
     {

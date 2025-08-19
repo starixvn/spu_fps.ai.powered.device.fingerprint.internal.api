@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Device.FingerPrint.Features.LogTrail.Services
+namespace Device.Fingerprint.Features.LogTrail.Services
 {
     public interface ILogTrailServices
     {

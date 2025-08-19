@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Device.FingerPrint.Model
+namespace Device.Fingerprint.Model
 {
     public class BotDModel
     {

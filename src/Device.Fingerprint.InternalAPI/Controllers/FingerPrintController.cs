@@ -1,8 +1,8 @@
 ﻿using Device.Fingerprint.InternalAPI.Model;
 using Device.Fingerprint.InternalAPI.Services;
-using Device.FingerPrint.Features.FingerPrint.Entities;
-using Device.FingerPrint.Features.FingerPrint.Services;
-using Device.FingerPrint.Model;
+using Device.Fingerprint.Features.FingerPrint.Entities;
+using Device.Fingerprint.Features.FingerPrint.Services;
+using Device.Fingerprint.Model;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
 using Newtonsoft.Json;

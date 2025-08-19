@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Device.FingerPrint.Model.TransactionMonitoring
+namespace Device.Fingerprint.Model.TransactionMonitoring
 {
     public class TransactionMonitoringModel
     {

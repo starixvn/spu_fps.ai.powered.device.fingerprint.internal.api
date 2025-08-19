@@ -1,5 +1,5 @@
 using Device.Fingerprint.InternalAPI.Controllers;
-using Device.FingerPrint.Redis;
+using Device.Fingerprint.Redis;
 using Device.Fingerprint.InternalAPI.Model;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;

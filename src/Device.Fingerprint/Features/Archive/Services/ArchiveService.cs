@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Archive.Services
+﻿namespace Device.Fingerprint.Features.Archive.Services
 {
     public interface IArchiveService
     {

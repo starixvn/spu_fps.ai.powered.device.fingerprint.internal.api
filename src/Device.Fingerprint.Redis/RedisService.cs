@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Redis
+﻿namespace Device.Fingerprint.Redis
 {
     using StackExchange.Redis;
     using StackExchange.Redis.Extensions.Core.Abstractions;

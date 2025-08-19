@@ -1,6 +1,6 @@
 ﻿using Device.Fingerprint.InternalAPI.Model;
-using Device.FingerPrint.Core;
-using Device.FingerPrint.Features.FingerPrint.Entities;
+using Device.Fingerprint.Core;
+using Device.Fingerprint.Features.FingerPrint.Entities;
 using Newtonsoft.Json;
 using System.Net.Sockets;
 using System.Text;

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 
-namespace Device.FingerPrint.Core
+namespace Device.Fingerprint.Core
 {
     public interface IAppSettings
     {

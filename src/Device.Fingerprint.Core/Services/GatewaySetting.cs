@@ -1,7 +1,7 @@
 ﻿
-namespace Device.FingerPrint.Core.Services
+namespace Device.Fingerprint.Core.Services
 {
-    using Device.FingerPrint.Core.Model;
+    using Device.Fingerprint.Core.Model;
     using Microsoft.Extensions.Configuration;
 
     public interface IGatewaySetting

@@ -3,7 +3,7 @@ using Fanex.Data.Repository;
 using System;
 using System.Security.Permissions;
 
-namespace Device.FingerPrint.Features.Transaction.Criterias
+namespace Device.Fingerprint.Features.Transaction.Criterias
 {
     class GetAssociationBySubscriberCriteria : NonQueryCommand
     {

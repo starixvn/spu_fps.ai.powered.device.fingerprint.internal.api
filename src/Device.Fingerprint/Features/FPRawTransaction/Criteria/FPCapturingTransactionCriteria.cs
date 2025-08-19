@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.FPRawTransaction.Criteria
+namespace Device.Fingerprint.Features.FPRawTransaction.Criteria
 {
     class FPCapturingTransactionCriteria : NonQueryCommand
     {

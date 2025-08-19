@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Device.FingerPrint.Core.Encoders
+namespace Device.Fingerprint.Core.Encoders
 {
     /// <summary>
     ///     Hex class for encoding and decoding.

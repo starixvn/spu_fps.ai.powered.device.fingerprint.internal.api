@@ -4,7 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace Device.FingerPrint.Core.Services
+namespace Device.Fingerprint.Core.Services
 {
     public class JWTService
     {

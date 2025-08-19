@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.FPDevices.Criterias
+namespace Device.Fingerprint.Features.FPDevices.Criterias
 {
     public class GetFPDeviceStagingTransactionPackageCriteria : CriteriaBase
     {

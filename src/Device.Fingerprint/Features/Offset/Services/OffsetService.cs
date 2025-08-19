@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Offset.Services
+﻿namespace Device.Fingerprint.Features.Offset.Services
 {
     public interface IOffsetService
     {

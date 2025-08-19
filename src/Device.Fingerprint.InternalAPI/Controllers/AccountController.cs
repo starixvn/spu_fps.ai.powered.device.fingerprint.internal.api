@@ -1,7 +1,7 @@
 ﻿namespace Device.Fingerprint.InternalAPI.Controllers
 {
-    using Device.FingerPrint.Features.Account.Model;
-    using Device.FingerPrint.Features.Account.Services;
+    using Device.Fingerprint.Features.Account.Model;
+    using Device.Fingerprint.Features.Account.Services;
     using Fanex.Logging;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;

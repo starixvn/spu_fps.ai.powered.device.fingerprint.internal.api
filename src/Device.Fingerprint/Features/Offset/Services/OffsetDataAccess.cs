@@ -1,7 +1,7 @@
-﻿using Device.FingerPrint.Features.Offset.Criterias;
+﻿using Device.Fingerprint.Features.Offset.Criterias;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.Offset.Services
+namespace Device.Fingerprint.Features.Offset.Services
 {
 
     public interface IOffsetDataAccess

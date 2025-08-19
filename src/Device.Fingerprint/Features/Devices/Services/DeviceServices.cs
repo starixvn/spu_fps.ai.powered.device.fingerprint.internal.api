@@ -1,6 +1,6 @@
-﻿namespace Device.FingerPrint.Features.Devices.Services
+﻿namespace Device.Fingerprint.Features.Devices.Services
 {
-    using Device.FingerPrint.Features.Devices.Model;
+    using Device.Fingerprint.Features.Devices.Model;
 
     public interface IDeviceServices
     {

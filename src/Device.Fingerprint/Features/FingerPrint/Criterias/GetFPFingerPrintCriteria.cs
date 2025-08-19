@@ -2,7 +2,7 @@
 using Fanex.Data.Repository;
 using System;
 
-namespace Device.FingerPrint.Features.FingerPrint.Criterias
+namespace Device.Fingerprint.Features.FingerPrint.Criterias
 {
     public class GetFPFingerPrintCriteria : CriteriaBase
     {

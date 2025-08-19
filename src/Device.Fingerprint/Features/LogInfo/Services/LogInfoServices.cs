@@ -1,8 +1,8 @@
-﻿using Device.FingerPrint.Features.LogInfo.Model;
+﻿using Device.Fingerprint.Features.LogInfo.Model;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 
-namespace Device.FingerPrint.Features.LogInfo.Services
+namespace Device.Fingerprint.Features.LogInfo.Services
 {
     public interface ILogInfoServices
     {

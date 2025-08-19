@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.LogTrail.Criterias
+﻿namespace Device.Fingerprint.Features.LogTrail.Criterias
 {
     using Fanex.Data.Repository;
     using Fanex.Data;

@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Model.Enums
+﻿namespace Device.Fingerprint.Model.Enums
 {
     public enum LogType
     {

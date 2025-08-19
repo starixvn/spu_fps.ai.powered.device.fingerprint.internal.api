@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Device.FingerPrint.Model\Device.FingerPrint.Model.csproj" />
+    <ProjectReference Include="..\Device.Fingerprint.Model\Device.Fingerprint.Model.csproj" />
   </ItemGroup>
 
 </Project>

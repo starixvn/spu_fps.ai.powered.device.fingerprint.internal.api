@@ -2,7 +2,7 @@
 using StackExchange.Redis;
 using StackExchange.Redis.Extensions.Core.Configuration;
 
-namespace Device.FingerPrint.Redis
+namespace Device.Fingerprint.Redis
 {
 
     public interface IRedisMultiplexDbService

@@ -1,4 +1,4 @@
-﻿using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Model;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Device.FingerPrint.Core
+namespace Device.Fingerprint.Core
 {
     public static class Utilities
     {

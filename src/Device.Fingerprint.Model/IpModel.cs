@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Device.FingerPrint.Model
+namespace Device.Fingerprint.Model
 {
     public class IpModel
     {

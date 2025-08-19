@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.FPTransactions.Models
+﻿namespace Device.Fingerprint.Features.FPTransactions.Models
 {
     public class FPRawTransactionEntity
     {

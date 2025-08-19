@@ -1,6 +1,6 @@
 using Device.Fingerprint.InternalAPI.Controllers;
-using Device.FingerPrint.Features.Subscriber.Services;
-using Device.FingerPrint.Model;
+using Device.Fingerprint.Features.Subscriber.Services;
+using Device.Fingerprint.Model;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;

@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Devices.Criterias
+﻿namespace Device.Fingerprint.Features.Devices.Criterias
 {
     using Fanex.Data;
     using Fanex.Data.Repository;

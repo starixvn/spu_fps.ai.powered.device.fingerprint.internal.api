@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Core.Model
+﻿namespace Device.Fingerprint.Core.Model
 {
     public class RateLimiterConfig
     {

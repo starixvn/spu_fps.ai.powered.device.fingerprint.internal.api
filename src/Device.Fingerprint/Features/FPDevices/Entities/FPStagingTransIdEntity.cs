@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.FPDevices.Entities
+﻿namespace Device.Fingerprint.Features.FPDevices.Entities
 {
     public class FPStagingTransIdEntity
     {

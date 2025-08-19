@@ -1,4 +1,4 @@
-﻿using Device.FingerPrint.Features.FingerPrint.Entities;
+﻿using Device.Fingerprint.Features.FingerPrint.Entities;
 using System.Net;
 
 namespace Device.Fingerprint.InternalAPI.Model

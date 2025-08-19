@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.Offset.Criterias
+namespace Device.Fingerprint.Features.Offset.Criterias
 {
     public class UpdateOffsetCriteria : NonQueryCommand
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Numerics;
 
-namespace Device.FingerPrint.Features.Transaction.Model
+namespace Device.Fingerprint.Features.Transaction.Model
 {
     public class TransactionInfoEntity
     {

@@ -1,7 +1,7 @@
 ﻿
 namespace Device.Fingerprint.InternalAPI.Model
 {
-    using Device.FingerPrint.Model;
+    using Device.Fingerprint.Model;
 
     public class FPFingerPrintTransform
     {

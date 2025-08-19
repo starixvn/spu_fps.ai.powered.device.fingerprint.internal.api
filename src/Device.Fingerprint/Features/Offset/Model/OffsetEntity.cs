@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Offset.Model
+﻿namespace Device.Fingerprint.Features.Offset.Model
 {
     public class OffsetEntity
     {

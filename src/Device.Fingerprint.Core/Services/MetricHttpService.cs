@@ -1,11 +1,11 @@
-﻿namespace Device.FingerPrint.Core.Services
+﻿namespace Device.Fingerprint.Core.Services
 {
     using System;
     using System.Net.Http.Headers;
     using System.Net.Http;
     using System.Text;
     using Prometheus;
-    using Device.FingerPrint.Core.Model;
+    using Device.Fingerprint.Core.Model;
 
     public static class MetricHttpService
     {

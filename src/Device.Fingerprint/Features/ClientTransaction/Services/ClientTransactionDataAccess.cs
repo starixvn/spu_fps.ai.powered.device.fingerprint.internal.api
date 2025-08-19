@@ -1,7 +1,7 @@
 ﻿using Fanex.Data.Repository;
-using Device.FingerPrint.Features.ClientTransaction.Criterias;
+using Device.Fingerprint.Features.ClientTransaction.Criterias;
 
-namespace Device.FingerPrint.Features.ClientTransaction.Services
+namespace Device.Fingerprint.Features.ClientTransaction.Services
 {
     public interface IClientTransactionDataAccess
     {

@@ -1,8 +1,8 @@
 ﻿
-namespace Device.FingerPrint.Features.LogTrail.Services
+namespace Device.Fingerprint.Features.LogTrail.Services
 {
     using System.Threading.Tasks;
-    using Device.FingerPrint.Features.LogTrail.Criterias;
+    using Device.Fingerprint.Features.LogTrail.Criterias;
     using Fanex.Data.Repository;
 
     public interface ILogTrailDataAccess

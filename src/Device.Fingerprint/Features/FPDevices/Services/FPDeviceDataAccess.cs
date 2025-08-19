@@ -1,12 +1,12 @@
-﻿using Device.FingerPrint.Features.FPDevices.Criteria;
-using Device.FingerPrint.Features.FPDevices.Criterias;
-using Device.FingerPrint.Features.FPDevices.Entities;
-using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Features.FPDevices.Criteria;
+using Device.Fingerprint.Features.FPDevices.Criterias;
+using Device.Fingerprint.Features.FPDevices.Entities;
+using Device.Fingerprint.Model;
 using Fanex.Data;
 using Fanex.Data.Repository;
 using System.Collections.Generic;
 
-namespace Device.FingerPrint.Features.FPDevices.Services
+namespace Device.Fingerprint.Features.FPDevices.Services
 {
 
     public interface IFPDeviceDataAccess

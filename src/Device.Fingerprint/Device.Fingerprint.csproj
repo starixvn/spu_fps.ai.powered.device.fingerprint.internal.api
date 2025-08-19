@@ -10,7 +10,7 @@
     <Compile Remove="Features\ClientTransaction\Model\**" />
     <Compile Remove="Features\SummaryTransaction\Model\**" />
     <EmbeddedResource Remove="Features\ClientTransaction\Model\**" />
-    <EmbeddedResource Remove="Features\SummaryTransaction\Model\**" />
+    <EmbeddedResource Remove="Features\SummaryTransaction\Model\**" /> 
     <None Remove="Features\ClientTransaction\Model\**" />
     <None Remove="Features\SummaryTransaction\Model\**" />
   </ItemGroup>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Device.FingerPrint.Model\Device.FingerPrint.Model.csproj" />
+    <ProjectReference Include="..\Device.Fingerprint.Model\Device.Fingerprint.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>

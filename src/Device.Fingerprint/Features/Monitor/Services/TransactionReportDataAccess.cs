@@ -1,10 +1,10 @@
-﻿using Device.FingerPrint.Features.Monitor.Criterias;
-using Device.FingerPrint.Features.Monitor.Model;
+﻿using Device.Fingerprint.Features.Monitor.Criterias;
+using Device.Fingerprint.Features.Monitor.Model;
 using Fanex.Data.Repository;
 using System;
 using System.Collections.Generic;
 
-namespace Device.FingerPrint.Features.Monitor.Services
+namespace Device.Fingerprint.Features.Monitor.Services
 {
 
     public interface ITransactionReportDataAccess

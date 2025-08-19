@@ -1,12 +1,12 @@
 using Device.Fingerprint.InternalAPI.Controllers;
 using Device.Fingerprint.InternalAPI.Services;
-using Device.FingerPrint.Core;
-using Device.FingerPrint.Features.Account.Services;
-using Device.FingerPrint.Features.Devices.Services;
-using Device.FingerPrint.Features.FingerPrint.Services;
-using Device.FingerPrint.Features.Subscriber.Services;
-using Device.FingerPrint.Features.Transaction.Services;
-using Device.FingerPrint.Redis;
+using Device.Fingerprint.Core;
+using Device.Fingerprint.Features.Account.Services;
+using Device.Fingerprint.Features.Devices.Services;
+using Device.Fingerprint.Features.FingerPrint.Services;
+using Device.Fingerprint.Features.Subscriber.Services;
+using Device.Fingerprint.Features.Transaction.Services;
+using Device.Fingerprint.Redis;
 using Fanex.Logging;
 using FluentAssertions;
 using Microsoft.AspNetCore.Http;
@@ -53,7 +53,7 @@ namespace Device.Fingerprint.Test
         {
             // Arrange
             var mockSubscriberServices = new Mock<ISubscriberServices>();
-            mockSubscriberServices.Setup(x => x.GetSubscriberByName(It.IsAny<string>())).Returns((FingerPrint.Model.SubscriberModel?)null);
+            mockSubscriberServices.Setup(x => x.GetSubscriberByName(It.IsAny<string>())).Returns((Fingerprint.Model.SubscriberModel?)null);
             
             var controller = new SubscriberController(mockSubscriberServices.Object);
 
@@ -102,13 +102,13 @@ namespace Device.Fingerprint.Test
             var mockDeviceServices = new Mock<IDeviceServices>();
             var mockLogger = new Mock<ILogger>();
             
-            mockDeviceServices.Setup(x => x.SearchDevice(It.IsAny<FingerPrint.Features.Devices.Model.SearchDeviceParamModel>()))
+            mockDeviceServices.Setup(x => x.SearchDevice(It.IsAny<Fingerprint.Features.Devices.Model.SearchDeviceParamModel>()))
                              .Throws(new Exception("Test exception"));
             
             var controller = new DeviceController(mockDeviceServices.Object, mockLogger.Object);
 
             // Act
-            var result = controller.SearchDevice(new FingerPrint.Features.Devices.Model.SearchDeviceParamModel());
+            var result = controller.SearchDevice(new Fingerprint.Features.Devices.Model.SearchDeviceParamModel());
 
             // Assert
             result.Should().NotBeNull();
@@ -129,13 +129,13 @@ namespace Device.Fingerprint.Test
             var mockAccountServices = new Mock<IAccountServices>();
             var mockLogger = new Mock<ILogger>();
             
-            mockAccountServices.Setup(x => x.SearchAccount(It.IsAny<FingerPrint.Features.Account.Model.SearchAccountParamModel>()))
+            mockAccountServices.Setup(x => x.SearchAccount(It.IsAny<Fingerprint.Features.Account.Model.SearchAccountParamModel>()))
                               .Throws(new Exception("Test exception"));
             
             var controller = new AccountController(mockAccountServices.Object, mockLogger.Object);
 
             // Act
-            var result = controller.SearchAccount(new FingerPrint.Features.Account.Model.SearchAccountParamModel());
+            var result = controller.SearchAccount(new Fingerprint.Features.Account.Model.SearchAccountParamModel());
 
             // Assert
             result.Should().NotBeNull();

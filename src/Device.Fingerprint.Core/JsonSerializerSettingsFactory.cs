@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Core
+﻿namespace Device.Fingerprint.Core
 {
     using Newtonsoft.Json.Serialization;
     using Newtonsoft.Json;

@@ -1,6 +1,6 @@
-﻿namespace Device.FingerPrint.Features.FPTransactions.Services
+﻿namespace Device.Fingerprint.Features.FPTransactions.Services
 {
-    using Device.FingerPrint.Features.FPTransactions.Models;    
+    using Device.Fingerprint.Features.FPTransactions.Models;    
     using System.Collections.Generic;
 
     public interface IFPTransactionServices

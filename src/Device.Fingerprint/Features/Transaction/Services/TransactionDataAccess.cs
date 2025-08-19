@@ -1,8 +1,8 @@
-﻿using Device.FingerPrint.Features.Transaction.Criterias;
-using Device.FingerPrint.Features.Transaction.Model;
+﻿using Device.Fingerprint.Features.Transaction.Criterias;
+using Device.Fingerprint.Features.Transaction.Model;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.Transaction.Services
+namespace Device.Fingerprint.Features.Transaction.Services
 {
     public interface ITransactionDataAccess
     {

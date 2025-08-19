@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.SummaryTransaction.Services
+﻿namespace Device.Fingerprint.Features.SummaryTransaction.Services
 {
 
     public interface ISummaryTransactionService

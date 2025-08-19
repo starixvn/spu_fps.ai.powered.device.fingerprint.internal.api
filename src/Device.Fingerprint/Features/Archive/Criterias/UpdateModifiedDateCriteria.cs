@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.Archive.Criterias
+namespace Device.Fingerprint.Features.Archive.Criterias
 {
     public class UpdateModifiedDateCriteria : NonQueryCommand
     {

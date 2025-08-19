@@ -2,7 +2,7 @@
 using Fanex.Data.Repository;
 using System.Security.Permissions;
 
-namespace Device.FingerPrint.Features.RiskLevel.Criterias
+namespace Device.Fingerprint.Features.RiskLevel.Criterias
 {
     public class GetLatestRiskLevelCriteria : NonQueryCommand
     {

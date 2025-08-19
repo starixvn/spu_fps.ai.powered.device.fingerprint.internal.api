@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Device.FingerPrint.Core.Services
+namespace Device.Fingerprint.Core.Services
 {
     public interface ICrypto
     {

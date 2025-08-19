@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace Device.FingerPrint.Redis
+namespace Device.Fingerprint.Redis
 {
     public interface IRedisMultiplexService
     {

@@ -1,8 +1,8 @@
-﻿using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Model;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Device.FingerPrint.Features.Subscriber.Services
+namespace Device.Fingerprint.Features.Subscriber.Services
 {
     public interface ISubscriberServices
     {

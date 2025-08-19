@@ -1,5 +1,5 @@
 ﻿
-namespace Device.FingerPrint.Model
+namespace Device.Fingerprint.Model
 {
     public enum Offset
     {

@@ -1,10 +1,10 @@
-﻿using Device.FingerPrint.Features.RiskLevel.Model;
-using Device.FingerPrint.Features.Transaction.Services;
+﻿using Device.Fingerprint.Features.RiskLevel.Model;
+using Device.Fingerprint.Features.Transaction.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Device.FingerPrint.Features.RiskLevel.Services
+namespace Device.Fingerprint.Features.RiskLevel.Services
 {
     public interface IRiskLevelService
     {

@@ -1,10 +1,10 @@
-﻿using Device.FingerPrint.Features.FingerPrint.Criterias;
-using Device.FingerPrint.Features.FingerPrint.Entities;
+﻿using Device.Fingerprint.Features.FingerPrint.Criterias;
+using Device.Fingerprint.Features.FingerPrint.Entities;
 using Fanex.Data;
 using System;
 using System.Collections.Generic;
 
-namespace Device.FingerPrint.Features.FingerPrint.Services
+namespace Device.Fingerprint.Features.FingerPrint.Services
 {
 
     public interface IFingerPrintDataAccess

@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.LogInfo.Criterias
+namespace Device.Fingerprint.Features.LogInfo.Criterias
 {
     public class InsertDCSConsumerLogCriteria : NonQueryCommand
     {

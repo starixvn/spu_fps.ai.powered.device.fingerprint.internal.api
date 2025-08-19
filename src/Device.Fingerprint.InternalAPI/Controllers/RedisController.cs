@@ -1,4 +1,4 @@
-﻿using Device.FingerPrint.Redis;
+﻿using Device.Fingerprint.Redis;
 using Device.Fingerprint.InternalAPI.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

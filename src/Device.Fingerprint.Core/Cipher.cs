@@ -3,7 +3,7 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Device.FingerPrint.Core
+namespace Device.Fingerprint.Core
 {
     public static class Cipher
     {

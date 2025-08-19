@@ -1,7 +1,7 @@
-﻿using Device.FingerPrint.Features.SummaryTransaction.Criterias;
+﻿using Device.Fingerprint.Features.SummaryTransaction.Criterias;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.SummaryTransaction.Services
+namespace Device.Fingerprint.Features.SummaryTransaction.Services
 {
     public interface ISummaryTransactionDataAccess
     {

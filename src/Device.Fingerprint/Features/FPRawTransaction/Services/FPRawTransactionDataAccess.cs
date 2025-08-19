@@ -1,7 +1,7 @@
-﻿using Device.FingerPrint.Features.FPRawTransaction.Criteria;
+﻿using Device.Fingerprint.Features.FPRawTransaction.Criteria;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.FPRawTransaction.Services
+namespace Device.Fingerprint.Features.FPRawTransaction.Services
 {
     public interface IFPRawTransactionDataAccess
     {

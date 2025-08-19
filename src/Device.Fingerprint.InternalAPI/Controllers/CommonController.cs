@@ -1,5 +1,5 @@
-﻿using Device.FingerPrint.Core;
-using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Core;
+using Device.Fingerprint.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;

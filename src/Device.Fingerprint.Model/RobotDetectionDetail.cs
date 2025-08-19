@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Device.FingerPrint.Model
+namespace Device.Fingerprint.Model
 {
     public class RobotDetectionDetail
     {

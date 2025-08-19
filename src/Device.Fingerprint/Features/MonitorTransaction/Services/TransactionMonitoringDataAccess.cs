@@ -1,8 +1,8 @@
 ﻿
-namespace Device.FingerPrint.Features.MonitorTransaction.Services
+namespace Device.Fingerprint.Features.MonitorTransaction.Services
 {
     using System.Threading.Tasks;
-    using Device.FingerPrint.Features.MonitorTransaction.Criteria;
+    using Device.Fingerprint.Features.MonitorTransaction.Criteria;
     using Fanex.Data.Repository;
 
     public interface ITransactionMonitoringDataAccess

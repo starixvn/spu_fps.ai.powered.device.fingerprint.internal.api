@@ -1,6 +1,6 @@
-﻿namespace Device.FingerPrint.Features.Account.Services
+﻿namespace Device.Fingerprint.Features.Account.Services
 {
-    using Device.FingerPrint.Features.Account.Model;
+    using Device.Fingerprint.Features.Account.Model;
 
     public interface IAccountServices
     {

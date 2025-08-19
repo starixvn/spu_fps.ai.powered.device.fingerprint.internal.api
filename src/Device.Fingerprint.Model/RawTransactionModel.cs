@@ -1,9 +1,9 @@
 ﻿using System.Numerics;
 using System;
 using FileHelpers;
-using Device.FingerPrint.Model.DTO;
+using Device.Fingerprint.Model.DTO;
 
-namespace Device.FingerPrint.Model
+namespace Device.Fingerprint.Model
 {
     [DelimitedRecord("|")]
     public class RawTransactionModel

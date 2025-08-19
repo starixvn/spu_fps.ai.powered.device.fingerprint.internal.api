@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Model.DTO
+﻿namespace Device.Fingerprint.Model.DTO
 {
     public class InsertFPFingerprintEntity
     {

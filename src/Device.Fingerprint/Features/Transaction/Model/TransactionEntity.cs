@@ -1,7 +1,7 @@
-﻿using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Model;
 using System;
 
-namespace Device.FingerPrint.Features.Transaction.Model
+namespace Device.Fingerprint.Features.Transaction.Model
 {
     public class TransactionEntity
     {

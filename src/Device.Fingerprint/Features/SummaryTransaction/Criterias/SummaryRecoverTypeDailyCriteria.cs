@@ -1,7 +1,7 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
 
-namespace Device.FingerPrint.Features.SummaryTransaction.Criterias
+namespace Device.Fingerprint.Features.SummaryTransaction.Criterias
 {
     public class SummaryRecoverTypeDailyCriteria : NonQueryCommand
     {

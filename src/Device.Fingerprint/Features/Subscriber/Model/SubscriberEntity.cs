@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Device.FingerPrint.Features.Subscriber.Model
+namespace Device.Fingerprint.Features.Subscriber.Model
 {
     public class SubscriberEntity
     {

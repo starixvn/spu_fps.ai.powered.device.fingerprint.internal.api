@@ -2,7 +2,7 @@
 using Fanex.Data.Repository;
 using System;
 
-namespace Device.FingerPrint.Features.Monitor.Criterias
+namespace Device.Fingerprint.Features.Monitor.Criterias
 {
     public class GetTransactionSumCriteria : NonQueryCommand
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Device.FingerPrint.Features.FingerPrint.Entities
+namespace Device.Fingerprint.Features.FingerPrint.Entities
 {
     public class FPFingerPrintEntity
     {

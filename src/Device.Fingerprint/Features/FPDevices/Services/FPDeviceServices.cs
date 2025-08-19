@@ -1,10 +1,10 @@
-﻿using Device.FingerPrint.Features.FPDevices.Entities;
-using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Features.FPDevices.Entities;
+using Device.Fingerprint.Model;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Device.FingerPrint.Features.FPDevices.Services
+namespace Device.Fingerprint.Features.FPDevices.Services
 {
     public interface IFPDeviceServices
     {

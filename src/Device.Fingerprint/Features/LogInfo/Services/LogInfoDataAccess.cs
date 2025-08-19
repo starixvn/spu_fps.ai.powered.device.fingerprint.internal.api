@@ -1,8 +1,8 @@
-﻿using Device.FingerPrint.Features.LogInfo.Criterias;
+﻿using Device.Fingerprint.Features.LogInfo.Criterias;
 using Fanex.Data.Repository;
 using System.Threading.Tasks;
 
-namespace Device.FingerPrint.Features.LogInfo.Services
+namespace Device.Fingerprint.Features.LogInfo.Services
 {
     public interface ILogInfoDataAccess
     {

@@ -1,7 +1,7 @@
-﻿using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Model;
 using Newtonsoft.Json;
 
-namespace Device.FingerPrint.Features.ClientTransaction.Services
+namespace Device.Fingerprint.Features.ClientTransaction.Services
 {
     public interface IClientTransactionService
     {

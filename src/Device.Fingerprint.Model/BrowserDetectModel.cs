@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Model
+﻿namespace Device.Fingerprint.Model
 {
     public class BrowserDetectModel
     {

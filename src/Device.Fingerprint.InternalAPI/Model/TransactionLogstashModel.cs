@@ -1,4 +1,4 @@
-﻿using Device.FingerPrint.Model;
+﻿using Device.Fingerprint.Model;
 
 namespace Device.Fingerprint.InternalAPI.Model
 {

@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.Devices.Model
+﻿namespace Device.Fingerprint.Features.Devices.Model
 {
     public class GetAssDevByDevSubscriberParamModel
     {

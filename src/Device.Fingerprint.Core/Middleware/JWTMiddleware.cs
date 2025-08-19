@@ -6,9 +6,9 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Device.FingerPrint.Core.Services;
+using Device.Fingerprint.Core.Services;
 
-namespace Device.FingerPrint.Core.Middleware
+namespace Device.Fingerprint.Core.Middleware
 {
     public class JWTMiddleware
     {

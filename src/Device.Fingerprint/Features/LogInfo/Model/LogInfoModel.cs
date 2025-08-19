@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Device.FingerPrint.Features.LogInfo.Model
+namespace Device.Fingerprint.Features.LogInfo.Model
 {
     public class LogInfoModel
     {

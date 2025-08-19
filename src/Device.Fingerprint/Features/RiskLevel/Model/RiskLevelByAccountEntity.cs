@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Features.RiskLevel.Model
+﻿namespace Device.Fingerprint.Features.RiskLevel.Model
 {
     public class RiskLevelByAccountEntity
     {

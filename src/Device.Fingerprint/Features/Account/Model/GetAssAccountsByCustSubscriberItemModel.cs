@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Device.FingerPrint.Features.Account.Model
+namespace Device.Fingerprint.Features.Account.Model
 {
     public class GetAssAccountsByCustSubscriberItemModel
     {

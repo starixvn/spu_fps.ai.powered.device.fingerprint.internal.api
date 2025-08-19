@@ -1,4 +1,4 @@
-﻿namespace Device.FingerPrint.Core.Middleware
+﻿namespace Device.Fingerprint.Core.Middleware
 {
     using System;
     using System.IdentityModel.Tokens.Jwt;
