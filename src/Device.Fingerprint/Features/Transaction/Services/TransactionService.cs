@@ -61,7 +61,7 @@ namespace Device.Fingerprint.Features.Transaction.Services
 
         public TransactionService(ITransactionDataAccess transactionDataAccess)
         {
-            this.transactionDataAccess = transactionDataAccess;
+            this.transactionDataAccess = transactionDataAccess ?? throw new ArgumentNullException(nameof(transactionDataAccess));
         }
 
         public void InsertRawTransaction(IEnumerable<RawTransactionModel> transactions, bool isTransOfDBExtra)

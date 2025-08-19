@@ -22,12 +22,12 @@
 
         public AccountServices(IAccountDataAccess accountDataAccess)
         {
-            this.accountDataAccess = accountDataAccess;
+            this.accountDataAccess = accountDataAccess ?? throw new ArgumentNullException(nameof(accountDataAccess));
         }
 
         public SearchAccountResultModel SearchAccount(SearchAccountParamModel param)
         {
-            if (param.IsSearchPartial)
+            if (param?.IsSearchPartial == true)
             {
                 return accountDataAccess.SearchPartialAccount(param);
             }

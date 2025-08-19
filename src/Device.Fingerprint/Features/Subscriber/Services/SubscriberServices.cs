@@ -18,7 +18,7 @@ namespace Device.Fingerprint.Features.Subscriber.Services
 
         public SubscriberServices(ISubscriberDataAccess subscriberDataAccess)
         {
-            this.subscriberDataAccess = subscriberDataAccess;
+            this.subscriberDataAccess = subscriberDataAccess ?? throw new ArgumentNullException(nameof(subscriberDataAccess));
         }
 
         public SubscriberModel GetSubscriberByName(string subscriberName)

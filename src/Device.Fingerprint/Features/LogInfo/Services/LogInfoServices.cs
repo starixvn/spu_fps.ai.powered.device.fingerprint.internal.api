@@ -15,7 +15,7 @@ namespace Device.Fingerprint.Features.LogInfo.Services
 
         public LogInfoServices(ILogInfoDataAccess logInfoDataAccess)
         {
-            this.logInfoDataAccess = logInfoDataAccess;
+            this.logInfoDataAccess = logInfoDataAccess ?? throw new ArgumentNullException(nameof(logInfoDataAccess));
         }
 
         public async Task InsertDCSConsumerLogAsync(LogInfoModel logInfo)

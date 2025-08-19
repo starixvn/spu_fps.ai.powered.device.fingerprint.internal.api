@@ -23,7 +23,7 @@
 
         public DeviceServices(IDeviceDataAccess deviceDataAccess)
         {
-            this.deviceDataAccess = deviceDataAccess;
+            this.deviceDataAccess = deviceDataAccess ?? throw new ArgumentNullException(nameof(deviceDataAccess));
         }
 
         public IEnumerable<SearchDeviceItemModel> SearchDevice(SearchDeviceParamModel param)
