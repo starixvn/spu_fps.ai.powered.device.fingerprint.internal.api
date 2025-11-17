@@ -19,7 +19,7 @@ namespace Device.Fingerprint.InternalAPI.Controllers
         {
             try
             {
-                var isExtraSub = false;
+                const bool isExtraSub = false;
 
                 var rawTransModels = JsonConvert.DeserializeObject<List<RawTransactionModel>>(rawTransJson);
 

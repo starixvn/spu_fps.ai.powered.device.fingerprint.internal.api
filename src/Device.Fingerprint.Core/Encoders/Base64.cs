@@ -89,7 +89,7 @@
 
         private static string ValidEncodedData(string encodedData)
         {
-            string pattern = "^[A-Za-z0-9+/]*={0,2}$";
+            const string pattern = "^[A-Za-z0-9+/]*={0,2}$";
 
             Match match = Regex.Match(encodedData, pattern);
 

@@ -29,9 +29,10 @@ namespace Device.Fingerprint.InternalAPI.Middleware
                 {
                     context.Response.Clear();
                     context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-
                     return;
                 }
+                
+                await next(context);
             }
             else if (pathValue == null)
             {
@@ -39,6 +40,10 @@ namespace Device.Fingerprint.InternalAPI.Middleware
                 context.Response.Clear();
                 context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 return;
+            }
+            else
+            {
+                // Path contains generatetoken/audience - allow through
             }
 
             await next(context);

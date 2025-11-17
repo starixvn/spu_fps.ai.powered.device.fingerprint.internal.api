@@ -114,16 +114,22 @@ namespace Device.Fingerprint.Core
         public static IEnumerable<List<T>> Partition<T>(this IList<T> source, Int32 size)
         {
             for (int i = 0; i < (source.Count / size) + (source.Count % size > 0 ? 1 : 0); i++)
+            {
                 yield return new List<T>(source.Skip(size * i).Take(size));
+            }
         }
 
         public static List<T>[] Partition<T>(List<T> list, int totalPartitions)
         {
             if (list == null)
-                throw new ArgumentNullException("list");
+            {
+                throw new ArgumentNullException(nameof(list));
+            }
 
             if (totalPartitions < 1)
-                throw new ArgumentOutOfRangeException("totalPartitions");
+            {
+                throw new ArgumentOutOfRangeException(nameof(totalPartitions));
+            }
 
             List<T>[] partitions = new List<T>[totalPartitions];
 
@@ -136,7 +142,9 @@ namespace Device.Fingerprint.Core
                 for (int j = k; j < k + maxSize; j++)
                 {
                     if (j >= list.Count)
+                    {
                         break;
+                    }
                     partitions[i].Add(list[j]);
                 }
                 k += maxSize;
@@ -286,7 +294,9 @@ namespace Device.Fingerprint.Core
         public static string SubStringUrl(string url)
         {
             if (string.IsNullOrEmpty(url))
+            {
                 return null;
+            }
 
             int cutIndex = url.IndexOfAny(new char[] { '?', '#' });
             var cleanUrl = cutIndex != -1 ? url.Substring(0, cutIndex) : url;
@@ -300,7 +310,9 @@ namespace Device.Fingerprint.Core
             var segments = uri.AbsolutePath.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 
             if (segments.Length < 4)
+            {
                 return rawUrl;
+            }
 
             var first = segments[0];
             var last = segments[segments.Length - 1];  
@@ -308,7 +320,9 @@ namespace Device.Fingerprint.Core
             for (var i = 1; i < segments.Length - 1; i++)
             {
                 if (!segments[i].Equals("casino", StringComparison.OrdinalIgnoreCase))
+                {
                     return rawUrl;
+                }
             }
 
             if (first == "casino" && last != "casino")
@@ -323,7 +337,9 @@ namespace Device.Fingerprint.Core
         public static string StripUnicodeCharactersFromString(string inputValue)
         {
             if (string.IsNullOrEmpty(inputValue))
+            {
                 return null;
+            }
 
             return Regex.Replace(inputValue, @"[^\u0000-\u007F]", string.Empty);
         }
@@ -394,7 +410,10 @@ namespace Device.Fingerprint.Core
 
         public static string RemoveRedisPrefix(string input, string prefix)
         {
-            if (string.IsNullOrEmpty(input)) return string.Empty;
+            if (string.IsNullOrEmpty(input))
+            {
+                return string.Empty;
+            }
 
             if (input.StartsWith(prefix))
             {

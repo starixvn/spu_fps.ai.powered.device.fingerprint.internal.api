@@ -13,12 +13,12 @@ namespace Device.Fingerprint.Core.Services
         string GetMD5Hash(string str);
     }
 
-    public class Crypto: ICrypto
+    public class Crypto: ICrypto, IDisposable
     {
         private readonly RijndaelManaged myRijndael = new RijndaelManaged();
         private readonly int iterations;
         private readonly byte[] salt;
-        private IAppSettings appSettings;
+        private bool disposed;
 
         public Crypto(IAppSettings appSettings)
         {
@@ -91,9 +91,29 @@ namespace Device.Fingerprint.Core.Services
 
             var sb = new StringBuilder();
             for (int i = 0; i < encoded.Length; i++)
+            {
                 sb.Append(encoded[i].ToString("x2"));
+            }
 
             return sb.ToString();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    myRijndael?.Dispose();
+                }
+                disposed = true;
+            }
         }
     }
 }
