@@ -1,5 +1,8 @@
-﻿namespace Device.Fingerprint.Core.Model
+﻿using System.Diagnostics.CodeAnalysis;
+
+namespace Device.Fingerprint.Core.Model
 {
+    [ExcludeFromCodeCoverage] // Configuration DTO - no business logic
     public class RateLimiterConfig
     {
         public int PermitLimit { get; set; }

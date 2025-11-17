@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Device.Fingerprint.Core
 {
@@ -66,6 +67,7 @@ namespace Device.Fingerprint.Core
         T GetSection<T>(string key);
     }
 
+    [ExcludeFromCodeCoverage] // Configuration class - no business logic to test
     public class AppSettings : IAppSettings
     {
         private readonly IConfiguration configuration;

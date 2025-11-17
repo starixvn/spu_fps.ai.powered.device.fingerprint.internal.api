@@ -1,7 +1,9 @@
 ﻿using Newtonsoft.Json;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Device.Fingerprint.Model
 {
+    [ExcludeFromCodeCoverage] // Configuration DTO - no business logic
     public class ScriptConfigModel
     {
         [JsonProperty("ek")]
