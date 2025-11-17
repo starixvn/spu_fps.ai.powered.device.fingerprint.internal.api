@@ -27,14 +27,9 @@
 
         public SearchAccountResultModel SearchAccount(SearchAccountParamModel param)
         {
-            if (param?.IsSearchPartial == true)
-            {
-                return accountDataAccess.SearchPartialAccount(param);
-            }
-            else
-            {
-                return accountDataAccess.SearchExactAccount(param);
-            }
+            return param?.IsSearchPartial == true
+                ? accountDataAccess.SearchPartialAccount(param)
+                : accountDataAccess.SearchExactAccount(param);
         }
 
         public GetAssAccountInfoByCustSubscriberModel GetAssAccountInfoByCustSubscriber(GetAssAccountInfoByCustSubscriberParamModel param)

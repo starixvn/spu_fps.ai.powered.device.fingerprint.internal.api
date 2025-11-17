@@ -1,8 +1,5 @@
 ﻿using Device.Fingerprint.Features.RiskLevel.Model;
-using Device.Fingerprint.Features.Transaction.Services;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Device.Fingerprint.Features.RiskLevel.Services
 {

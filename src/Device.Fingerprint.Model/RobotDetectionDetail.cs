@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Device.Fingerprint.Model
+﻿namespace Device.Fingerprint.Model
 {
     public class RobotDetectionDetail
     {

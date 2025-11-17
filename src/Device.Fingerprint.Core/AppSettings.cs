@@ -118,6 +118,7 @@ namespace Device.Fingerprint.Core
 
         private readonly bool isVaultEnable;
 
+#pragma warning disable S1541 // Constructor complexity is acceptable for configuration initialization
         public AppSettings(IConfiguration configuration)
         {
             this.configuration = configuration;
@@ -160,8 +161,6 @@ namespace Device.Fingerprint.Core
 
             // Consumer Settings
             isExtraSub = GetBoolValue("Consumer:IsExtraSub");
-
-            // Feature Flags
             isDisableJsChallenge = GetBoolValue("Consumer:IsDisableJsChallenge");
             isVaultEnable = GetBoolValue("VaultOptions:Enable");
         }

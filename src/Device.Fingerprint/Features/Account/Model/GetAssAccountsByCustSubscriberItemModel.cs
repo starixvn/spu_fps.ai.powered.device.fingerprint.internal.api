@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Device.Fingerprint.Features.Account.Model
+﻿namespace Device.Fingerprint.Features.Account.Model
 {
     public class GetAssAccountsByCustSubscriberItemModel
     {

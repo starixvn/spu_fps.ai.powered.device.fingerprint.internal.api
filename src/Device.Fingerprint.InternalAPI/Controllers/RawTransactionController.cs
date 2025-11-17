@@ -51,9 +51,6 @@ namespace Device.Fingerprint.InternalAPI.Controllers
         {
             try
             {
-                //inputString = inputString.Replace(":NULL", ":\"NULL\"");
-
-                //var model = JsonConvert.DeserializeObject<IEnumerable<InsertFPFingerprintEntity>>(inputString);
                 var fingerPrintJson = JsonConvert.SerializeObject(inputEntity);
 
                 transactionService.InsertFPFingerPrint(fingerPrintJson, isTransOfDBExtra: false);

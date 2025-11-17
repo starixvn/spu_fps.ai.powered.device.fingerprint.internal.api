@@ -129,10 +129,6 @@ LogManager.SetDefaultLogCategory("Device.Fingerprint.InternalAPI")
             })
         ]);
 
-//ExceptionHandler
-//    .UseConfig(new LoggingConfiguration())
-//    .UseGetDbExceptionInfo(DatabaseInfoGetters.GetDbExceptionInfo);
-
 var environment = builder.Configuration["AppConfig:Environment"];
 LogService.Info($"InternalAPI {environment} Start!");
 

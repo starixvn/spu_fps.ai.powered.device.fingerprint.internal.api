@@ -120,9 +120,9 @@
             {
                 logger.Error("FPS Get Transaction History exception: " + ex.Message);
 
-                if (!string.IsNullOrEmpty(ex.Message) && ex.Message.ToLower().Contains("timeout expired"))
+                if (!string.IsNullOrEmpty(ex.Message) && ex.Message.ToLower(System.Globalization.CultureInfo.InvariantCulture).Contains("timeout expired"))
                 {
-                    return Ok(new TransactionResultModel() { IsTimeout = true });
+                    return Ok(new TransactionResultModel { IsTimeout = true });
                 }
 
                 return Ok(new TransactionResultModel());
@@ -160,9 +160,9 @@
             {
                 logger.Error("FPS Get Transaction History By Device exception: " + ex.Message);
 
-                if (!string.IsNullOrEmpty(ex.Message) && ex.Message.ToLower().Contains("timeout expired"))
+                if (!string.IsNullOrEmpty(ex.Message) && ex.Message.ToLower(System.Globalization.CultureInfo.InvariantCulture).Contains("timeout expired"))
                 {
-                    return Ok(new TransactionHistoryByDeviceResultModel() { IsTimeout = true });
+                    return Ok(new TransactionHistoryByDeviceResultModel { IsTimeout = true });
                 }
 
                 return Ok(new TransactionHistoryByDeviceResultModel());

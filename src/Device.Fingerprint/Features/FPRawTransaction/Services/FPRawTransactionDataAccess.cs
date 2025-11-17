@@ -10,10 +10,6 @@ namespace Device.Fingerprint.Features.FPRawTransaction.Services
 
     public class FPRawTransactionDataAccess : IFPRawTransactionDataAccess
     {
-        public FPRawTransactionDataAccess()
-        {
-        }
-
         public int InsertTransaction(string jsonTrans)
         {
             var repository = new DynamicRepository();

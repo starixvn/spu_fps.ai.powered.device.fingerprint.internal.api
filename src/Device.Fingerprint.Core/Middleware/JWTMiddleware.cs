@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Device.Fingerprint.Core.Services;
 
@@ -23,7 +21,16 @@ namespace Device.Fingerprint.Core.Middleware
 
         public async Task Invoke(HttpContext context)
         {
-            var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(' ').Last();
+            var authHeader = context.Request.Headers["Authorization"].FirstOrDefault();
+            string token = null;
+            if (authHeader != null)
+            {
+                var parts = authHeader.Split(' ');
+                if (parts.Length > 0)
+                {
+                    token = parts[parts.Length - 1];
+                }
+            }
 
             if (token != null && !ValidateToken(token))
             {
@@ -39,7 +46,7 @@ namespace Device.Fingerprint.Core.Middleware
         {
             if (expires != null)
             {
-                return expires > DateTime.UtcNow;
+                return expires > DateTimeOffset.UtcNow.DateTime;
             }
             return false;
         }
@@ -61,7 +68,7 @@ namespace Device.Fingerprint.Core.Middleware
                     LifetimeValidator = CustomLifetimeValidator,
                     RequireExpirationTime = true,
                     ClockSkew = TimeSpan.Zero
-                }, out SecurityToken validatedToken);
+                }, out _);
             }
             catch
             {

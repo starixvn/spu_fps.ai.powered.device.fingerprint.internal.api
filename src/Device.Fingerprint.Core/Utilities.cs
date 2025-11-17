@@ -17,18 +17,23 @@ namespace Device.Fingerprint.Core
     {
         private const int _TotalRedisDB = 16;
 
-        public static string GetURLFromDeviceCode(string di)
+        public static Uri GetURLFromDeviceCode(string di)
         {
             if (string.IsNullOrWhiteSpace(di))
             {
-                return string.Empty;
+                return null;
             }
 
             var requestData = di.Split(new[] { "###" }, StringSplitOptions.None);
 
             var url = requestData.Length >= 8 ? requestData[7] : string.Empty;
 
-            return url;
+            if (!Uri.TryCreate(url, UriKind.RelativeOrAbsolute, out var uri))
+            {
+                return null;
+            }
+
+            return uri;
         }
 
         public static string GetUserAgentFromDeviceCode(string di)
@@ -206,9 +211,8 @@ namespace Device.Fingerprint.Core
         public static string Long2DotIPV6(string bigint)
         {
             string retval = "";
-            var intval = BigInteger.Zero;
 
-            if (System.Numerics.BigInteger.TryParse(bigint, out intval))
+            if (System.Numerics.BigInteger.TryParse(bigint, out var intval))
             {
                 retval = intval.ToString("x").PadLeft(32, '0');
                 char[] trimme = new[] { ':' };
@@ -221,7 +225,7 @@ namespace Device.Fingerprint.Core
         public static string Long2DotIP(BigInteger IPNum)
         {
             string result = "";
-            result = ((IPNum / 16777216) % 256) + "." + ((IPNum / 65536) % 256) + "." + ((IPNum / 256) % 256) + "." + (IPNum % 256);
+            result = ((IPNum / 16_777_216) % 256) + "." + ((IPNum / 65536) % 256) + "." + ((IPNum / 256) % 256) + "." + (IPNum % 256);
             return result;
         }
 
@@ -238,11 +242,15 @@ namespace Device.Fingerprint.Core
             if (ipAddress.AddressFamily == AddressFamily.InterNetworkV6)    // IPv6
             {
 
-                var strings = Enumerable.Range(0, 8)    // create index
-                                        .Select(i => ipAddress.GetAddressBytes().ToList().GetRange(i * 2, 2))       // get 8 chunks of bytes
-                                        .Select(selector: i => { i.Reverse(); return i; })    // reverse bytes for endianness
-                                        .Select(bytes => BitConverter.ToInt16(bytes.ToArray(), 0))  // convert bytes to 16 bit int
-                                        .Select(int16 => string.Format("{0:X4}", int16).ToUpper()); // format int as a 4 digit hex 
+                var strings = Enumerable.Range(0, 8)
+                                        .Select(i => ipAddress.GetAddressBytes().ToList().GetRange(i * 2, 2))
+                                        .Select(selector: i =>
+                                        {
+                                            i.Reverse();
+                                            return i;
+                                        })
+                                        .Select(bytes => BitConverter.ToInt16(bytes.ToArray(), 0))
+                                        .Select(int16 => string.Format(System.Globalization.CultureInfo.InvariantCulture, "{0:X4}", int16).ToUpper(System.Globalization.CultureInfo.InvariantCulture));
 
                 return string.Join(":", strings);   // join hex ints with ':'
             }
@@ -291,17 +299,18 @@ namespace Device.Fingerprint.Core
             return data != "N/A" ? data : null;
         }
 
-        public static string SubStringUrl(string url)
+        public static Uri SubStringUrl(string url)
         {
             if (string.IsNullOrEmpty(url))
             {
                 return null;
             }
 
-            int cutIndex = url.IndexOfAny(new char[] { '?', '#' });
+            int cutIndex = url.IndexOfAny(new[] { '?', '#' });
             var cleanUrl = cutIndex != -1 ? url.Substring(0, cutIndex) : url;
 
-            return CollapseCasinoPaths(cleanUrl);
+            var result = CollapseCasinoPaths(cleanUrl);
+            return Uri.TryCreate(result, UriKind.Absolute, out var uri) ? uri : null;
         }
 
         private static string CollapseCasinoPaths(string rawUrl)

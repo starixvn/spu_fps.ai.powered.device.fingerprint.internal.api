@@ -1,12 +1,7 @@
 ﻿using Device.Fingerprint.Features.RiskLevel.Criterias;
 using Device.Fingerprint.Features.RiskLevel.Model;
-using Device.Fingerprint.Features.Transaction.Criterias;
-using Device.Fingerprint.Features.Transaction.Model;
-using Device.Fingerprint.Model;
 using Fanex.Data.Repository;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Device.Fingerprint.Features.RiskLevel.Services
 {

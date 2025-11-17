@@ -24,7 +24,7 @@ namespace Device.Fingerprint.InternalAPI.Controllers
             {
                 Environment = appSettings.Environment,
                 ServerName = Environment.MachineName,
-                ServerTime = DateTime.Now,
+                ServerTime = DateTimeOffset.Now.DateTime,
                 LocalIP = localIpAddress?.ToString()
             };
         }

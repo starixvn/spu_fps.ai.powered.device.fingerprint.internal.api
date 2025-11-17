@@ -1,6 +1,5 @@
 ﻿using Fanex.Data;
 using Fanex.Data.Repository;
-using System.Security.Permissions;
 
 namespace Device.Fingerprint.Features.RiskLevel.Criterias
 {

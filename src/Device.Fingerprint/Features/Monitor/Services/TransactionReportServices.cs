@@ -1,8 +1,6 @@
 ﻿using Device.Fingerprint.Features.Monitor.Model;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Device.Fingerprint.Features.Monitor.Services
 {

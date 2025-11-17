@@ -8,6 +8,7 @@ namespace Device.Fingerprint.InternalAPI.Middleware
     {
         private readonly RequestDelegate next = next;
         private readonly IAppSettings appSettings = appSettings;
+        private const string SkipValidationPath = "generatetoken/audience";
 
         public async Task Invoke(HttpContext context)
         {
@@ -19,34 +20,44 @@ namespace Device.Fingerprint.InternalAPI.Middleware
                 return;
             }
 
-            // Add null check for context.Request.Path.Value
             var pathValue = context.Request.Path.Value;
-            if (pathValue != null && !pathValue.Contains("generatetoken/audience"))
+            if (pathValue != null && pathValue.Contains(SkipValidationPath))
             {
-                var token = context.Request.Headers["Authorization"].FirstOrDefault()?.Split(' ').Last();
-
-                if (string.IsNullOrWhiteSpace(token) || !ValidateToken(context, token))
-                {
-                    context.Response.Clear();
-                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
-                    return;
-                }
-                
                 await next(context);
-            }
-            else if (pathValue == null)
-            {
-                // If path is null, return 401 for security
-                context.Response.Clear();
-                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
                 return;
             }
-            else
+
+            if (pathValue == null || !IsAuthorized(context))
             {
-                // Path contains generatetoken/audience - allow through
+                SetUnauthorizedResponse(context);
+                return;
             }
 
             await next(context);
+        }
+
+        private bool IsAuthorized(HttpContext context)
+        {
+            var token = ExtractToken(context);
+            return !string.IsNullOrWhiteSpace(token) && ValidateToken(context, token);
+        }
+
+        private static string ExtractToken(HttpContext context)
+        {
+            var authHeader = context.Request.Headers["Authorization"].FirstOrDefault();
+            if (authHeader == null)
+            {
+                return null;
+            }
+
+            var parts = authHeader.Split(' ');
+            return parts.Length > 0 ? parts[parts.Length - 1] : null;
+        }
+
+        private static void SetUnauthorizedResponse(HttpContext context)
+        {
+            context.Response.Clear();
+            context.Response.StatusCode = StatusCodes.Status401Unauthorized;
         }
 
         private bool ValidateToken(HttpContext context, string token)

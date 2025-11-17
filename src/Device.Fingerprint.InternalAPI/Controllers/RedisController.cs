@@ -29,13 +29,13 @@ namespace Device.Fingerprint.InternalAPI.Controllers
                     var timeSpan = TimeSpan.FromSeconds(ttlSeconds);
                     expiryInfo = $"Expires in: {timeSpan.TotalSeconds:F0} seconds ({timeSpan.Days}d {timeSpan.Hours}h {timeSpan.Minutes}m {timeSpan.Seconds}s)";
                 }
-                else if (ttlSeconds == -1)
+                else if (ttlSeconds < 0)
                 {
-                    expiryInfo = "No expiration set (persistent key)";
+                    expiryInfo = "Key has expired or does not exist";
                 }
                 else
                 {
-                    expiryInfo = "Key has expired or does not exist";
+                    expiryInfo = "No expiration set (persistent key)";
                 }
 
                 return Ok($"Key '{key}' found in database {dbIndex} with value: {result}. {expiryInfo}");
